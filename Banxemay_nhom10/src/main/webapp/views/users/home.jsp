@@ -80,6 +80,7 @@
 														<option>Black</option>
 														<option>White</option>
 														<option>Red</option>
+														<option>Other</option>
 													</select>
 												</div>
 											</div>

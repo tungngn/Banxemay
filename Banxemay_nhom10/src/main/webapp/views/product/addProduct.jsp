@@ -23,7 +23,7 @@
 									<option value="${item.cateID}">${item.cateName}</option>
 								</c:forEach>
 							</select><br>
-			<label>Enter Stoke:</label>
+			<label>Enter Stock:</label>
 			<input type="text" name="stoke"><br>
 			
 			<input type="submit" value="Insert product">
