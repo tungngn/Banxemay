@@ -47,11 +47,10 @@
 	</div>
 </nav>
 
-<section class="jumbotron text-center">
+<section class="jumbotron text-center bg-banner">
 	<div class="container">
-	<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.specializedconceptstore.co.uk%2Fsale%2F&psig=AOvVaw0MZnVokN9evc3GVeTE_mSB&ust=1702392444229000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLDv8JDQh4MDFQAAAAAdAAAAABAD" alt="https://www.specializedconceptstore.co.uk/sale/">
 		<h1 class="jumbotron-heading">Bán xe máy</h1>
-		<p class="lead text-muted mb-0">Dẫn đầu sự di chuyển với chất
+		<p class="lead text-white mb-0">Dẫn đầu sự di chuyển với chất
 			lượng và phong cách tại mỗi quãng đường!</p>
 	</div>
 </section>

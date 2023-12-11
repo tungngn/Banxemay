@@ -3,58 +3,77 @@
 ** Created by T-PHP https://t-php.fr/43-theme-ecommerce-bootstrap-4.html
 */
 .bloc_left_price {
-    color: #e44d26;
-    text-align: center;
-    font-weight: bold;
-    font-size: 150%;
+	color: #e44d26;
+	text-align: center;
+	font-weight: bold;
+	font-size: 150%;
 }
+
 .category_block li:hover {
-    background-color: #6c757d;
+	background-color: #6c757d;
 }
+
 .category_block li:hover a {
-    color: #f8f9fa;
+	color: #f8f9fa;
 }
+
 .category_block li a {
-    color: #343a40;
+	color: #343a40;
 }
+
 .add_to_cart_block .price {
-    color: #e44d26;
-    text-align: center;
-    font-weight: bold;
-    font-size: 200%;
-    margin-bottom: 0;
+	color: #e44d26;
+	text-align: center;
+	font-weight: bold;
+	font-size: 200%;
+	margin-bottom: 0;
 }
+
 .add_to_cart_block .price_discounted {
-    color: #6c757d;
-    text-align: center;
-    text-decoration: line-through;
-    font-size: 140%;
+	color: #6c757d;
+	text-align: center;
+	text-decoration: line-through;
+	font-size: 140%;
 }
+
 .product_rassurance {
-    padding: 10px;
-    margin-top: 15px;
-    background: #f8f9fa;
-    border: 1px solid #6c757d;
-    color: #6c757d;
+	padding: 10px;
+	margin-top: 15px;
+	background: #f8f9fa;
+	border: 1px solid #6c757d;
+	color: #6c757d;
 }
+
 .product_rassurance .list-inline {
-    margin-bottom: 0;
-    text-transform: uppercase;
-    text-align: center;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	text-align: center;
 }
+
 .product_rassurance .list-inline li:hover {
-    color: #343a40;
+	color: #343a40;
 }
+
 .reviews_product .fa-star {
-    color: gold;
+	color: gold;
 }
+
 .pagination {
-    margin-top: 20px;
+	margin-top: 20px;
 }
+
 footer {
-    background: #343a40;
-    padding: 40px;
+	background: #343a40;
+	padding: 40px;
 }
+
 footer a {
-    color: #f8f9fa!important
+	color: #f8f9fa !important
+}
+
+.bg-banner {
+	background-image: url(https://th.bing.com/th/id/R.7c4c1402a5c9251815a6a483718c849f?rik=byri4eigrY1xKQ&pid=ImgRaw&r=0);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
