@@ -46,7 +46,7 @@ public class ProductController extends HttpServlet {
 			rd.forward(req, resp);
 
 		} else if (url.contains("findprobycate")) {
-			int id = Integer.parseInt(req.getParameter("cateID"));
+			int id = Integer.parseInt(req.getParameter("cateID"));adawdawdawdawdawdad
 
 			List<ProductModel> list1 = proService.findProductByCategory(id);
 			req.setAttribute("listpro", list1);
