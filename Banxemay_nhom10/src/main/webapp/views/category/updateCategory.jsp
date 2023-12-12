@@ -11,9 +11,9 @@
 	<form action="update" method="post">
 			<label>ID:</label>
 			<input type="text" name="cateID" value="${cate.cateID}" readonly="readonly">
-			<label>Nhap category name:</label>
+			<label>Nhập tên hãng xe:</label>
 			<input type="text" name="cateName" value="${cate.cateName}">
-			<label>Nhap link icon:</label>
+			<label>Nhập link hình ảnh:</label>
 			<input type="text" name="images" value="${cate.image}">
 			
 			<input type="submit" value="Update Category">

@@ -3,7 +3,7 @@
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
 	<div class="container">
-		<a class="navbar-brand" href="index.html">Group 10</a>
+		<a class="navbar-brand" href="index.html">Group 10 - Banxemay</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarsExampleDefault"
 			aria-controls="navbarsExampleDefault" aria-expanded="false"
