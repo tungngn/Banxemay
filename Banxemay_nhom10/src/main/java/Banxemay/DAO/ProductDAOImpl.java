@@ -104,16 +104,16 @@ public class ProductDAOImpl implements IProductDAO {
 
 	@Override
 	public void update(ProductModel model) {
-		String sql = "update product set productName=?,description=?,price=?,imageLink=?,categoryID=?,stoke=? where ProductID";
+		String sql = "update product set productName=?,description=?,price=?,imageLink=?,categoryID=?,stoke=? where ProductID=?";
 		try {
 			new DBConnection();
-			Connection conn = DBConnection.getConnection();
-			PreparedStatement ps = conn.prepareStatement(sql);
+			conn = DBConnection.getConnection();
+			ps = conn.prepareStatement(sql);
 			ps.setString(1, model.getProductName());
 			ps.setString(2, model.getDesc());
 			ps.setInt(3, model.getPrice());
 			ps.setString(4, model.getImageLink());
-			ps.setInt(5, model.getCategory().getCateID());
+			ps.setInt(5, model.getCategoryID());
 			ps.setInt(6, model.getStoke());
 			ps.setInt(7, model.getProductID());
 

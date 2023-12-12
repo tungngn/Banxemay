@@ -14,7 +14,7 @@
 			<label>Nhập tên hãng xe:</label>
 			<input type="text" name="cateName" value="${cate.cateName}">
 			<label>Nhập link hình ảnh:</label>
-			<input type="text" name="images" value="${cate.image}">
+			<input type="text" name="image" value="${cate.image}">
 			
 			<input type="submit" value="Update Category">
 	

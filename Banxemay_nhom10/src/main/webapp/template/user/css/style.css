@@ -2,6 +2,10 @@
 ** Style Simple Ecommerce Theme for Bootstrap 4
 ** Created by T-PHP https://t-php.fr/43-theme-ecommerce-bootstrap-4.html
 */
+html {
+  scroll-behavior: smooth;
+}
+
 .bloc_left_price {
 	color: #e44d26;
 	text-align: center;

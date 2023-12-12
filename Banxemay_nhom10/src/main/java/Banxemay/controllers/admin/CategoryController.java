@@ -95,7 +95,7 @@ public class CategoryController extends HttpServlet {
 		cateService.update(model);
 						
 		//tra ve view (chuyen trang)
-		resp.sendRedirect(req.getContextPath() + "/category/findAll");
+		resp.sendRedirect(req.getContextPath() + "/admin/category/findAll");
 		
 	}
 
@@ -117,7 +117,7 @@ public class CategoryController extends HttpServlet {
 		cateService.insert(model);
 				
 		//tra ve view (chuyen trang)
-		resp.sendRedirect(req.getContextPath() + "/category/findAll");
+		resp.sendRedirect(req.getContextPath() + "/admin/category/findAll");
 	}
 
 	private void findAll(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

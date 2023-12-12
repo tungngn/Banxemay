@@ -25,7 +25,7 @@ import Banxemay.utils.UploadUtils;
 
 @MultipartConfig(fileSizeThreshold = 1024 * 1024 * 10, maxFileSize = 1024 * 1024 * 50, maxRequestSize = 1024 * 1024 * 50)
 
-@WebServlet(urlPatterns = { "/admin/product/listproduct", "/admin/product/findprobycate", "/admin/product/admin-insertpro","/admin/product/delete" })
+@WebServlet(urlPatterns = { "/admin/product/listproduct", "/admin/product/findprobycate", "/admin/product/admin-insertpro","/admin/product/delete", "/admin/product/update" })
 public class ProductController extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
@@ -59,6 +59,15 @@ public class ProductController extends HttpServlet {
 			req.setAttribute("list", list);
 			RequestDispatcher rd = req.getRequestDispatcher("/views/product/addProduct.jsp");
 			rd.forward(req, resp);
+		}
+			
+		else if(url.contains("update")) {
+			int id = Integer.parseInt(req.getParameter("id"));
+			ProductModel model = proService.findOne(id);
+			req.setAttribute("pro", model);
+			RequestDispatcher rd = req.getRequestDispatcher("/views/product/updateProduct.jsp");
+			rd.forward(req, resp);
+			
 		} else if (url.contains("delete")) {
 			delete(req, resp);
 		}
@@ -76,6 +85,8 @@ public class ProductController extends HttpServlet {
 			RequestDispatcher rd = req.getRequestDispatcher("/views/product/listProduct.jsp");
 			rd.forward(req, resp);
 
+		}else if(url.contains("update")) {
+			update(req,resp);
 		}
 
 	}
@@ -170,6 +181,43 @@ public class ProductController extends HttpServlet {
 
 		// resp.sendRedirect(req.getContextPath() + "/listproduct");
 
+	}
+	
+	
+	private void update(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+		//thiet lap ngon ngu
+		req.setCharacterEncoding("UTF-8");
+		resp.setCharacterEncoding("UTF-8");
+						
+		//nhan du lieu tu form
+		String productName = req.getParameter("productName");
+		String imageLink = req.getParameter("imageLink");
+		String desc = req.getParameter("desc");
+		int price = Integer.parseInt(req.getParameter("price"));
+		int categoryID = Integer.parseInt(req.getParameter("categoryID"));
+		int sellerID = Integer.parseInt(req.getParameter("sellerID"));
+		int amount = Integer.parseInt(req.getParameter("amount"));
+		int stoke = Integer.parseInt(req.getParameter("stoke"));
+		int id = Integer.parseInt(req.getParameter("productID"));
+						
+		//Dua du lieu vao model
+		ProductModel model = new ProductModel();
+		model.setProductID(id);
+		model.setProductName(productName);
+		model.setDesc(desc);
+		model.setPrice(price);
+		model.setCategoryID(categoryID);
+		model.setSellerID(sellerID);
+		model.setAmount(amount);
+		model.setStoke(stoke);
+		model.setImageLink(imageLink);
+						
+		//goi phuong thuc insert trong services
+		proService.update(model);
+						
+		//tra ve view (chuyen trang)
+		resp.sendRedirect(req.getContextPath() + "/admin/product/listproduct");
+		
 	}
 
 	private void delete(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {

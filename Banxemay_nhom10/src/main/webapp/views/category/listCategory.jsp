@@ -8,12 +8,15 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 	<c:if test="${message!=null}">
 		<span>${message}</span>
 	</c:if>
 	<c:if test="${error!=null}">
 		<span>${error}</span>
 	</c:if>
+	<a href='<c:url value= "/admin/category/add"/> '
+		class="btn btn-success float-right">Thêm hãng xe</a>
 	<table class="table">
 		<thead>
 			<tr>

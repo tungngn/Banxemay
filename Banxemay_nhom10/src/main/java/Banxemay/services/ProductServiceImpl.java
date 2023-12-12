@@ -33,7 +33,7 @@ public class ProductServiceImpl implements IProductService {
 		newPro.setDesc(model.getDesc());
 		newPro.setPrice(model.getPrice());
 		newPro.setImageLink(model.getImageLink());
-		newPro.setCategory(model.getCategory());
+		newPro.setCategoryID(model.getCategoryID());
 		newPro.setStoke(model.getStoke());
 		
 		proDao.update(newPro);

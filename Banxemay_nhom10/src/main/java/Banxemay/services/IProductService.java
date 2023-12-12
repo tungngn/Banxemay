@@ -2,6 +2,7 @@ package Banxemay.services;
 
 import java.util.List;
 
+import Banxemay.models.CategoryModels;
 import Banxemay.models.ProductModel;
 
 public interface IProductService {
@@ -35,6 +36,8 @@ public interface IProductService {
 	int countCID(int id);
 	
 	int countSell(int id);
+
+	void update(CategoryModels model);
 	
 	
 	
